@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="log-in.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Login</title>
+</head>
+<!-- Add icon library -->
+
+<body>
+
+    <div id="content">
+        <header>
+            <div class="header">
+
+                <div class="nav">
+                    <label for="menu">&#9776;</label>
+                    <input type="checkbox" id="menu" />
+                    <div class="menu">
+                        <a href="index-fronter.html">Home</a>
+                        <a href="#information">Information</a>
+                        <a href="profile.html">Profile</a>
+                        <a href="#chat">Chat</a>
+                        <a href="#settings">Settings</a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="card">
+            <img src="avatar.png" alt="John" style="width:30%">
+            <h1>Name Surname</h1>
+            <p class="title">MMD Student, Example</p>
+            <p>KEA University</p>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+
+
+
+        <button class="signin" onclick="openForm()">About me</button>
+
+        <div class="btns" id="form">
+            <p>Things I like to do: Read, run, enjoy family time, traveling and baking.
+                <br>
+                Favorite foods: Cookies, cake, candy really anything with sugar.
+                <br>
+                Something many people don't know about me: I love to sing.
+
+            </p>
+        </div>
+
+        <button class="signin next-btns" onclick="openForm2()">Experience</button>
+        <div class="btns" id="form2">
+            <p> Waitress
+                Caffe - “Pizza Hut”
+                2009-2011
+                <br>
+                Graphical Designer
+                Company - “Lemon”
+                2009-2011
+                <br>
+                Graphical Designer
+                selfemployed
+                2011-now</p>
+        </div>
+
+        <button class="signin next-btns" onclick="openForm3()">Skills</button>
+        <div class="btns" id="form3">
+            <p>
+                Accurate. <br>
+
+                Adobe Acrobat.<br>
+
+                Adobe Creative Suite.<br>
+
+                Adobe Flash.<br>
+
+                Adobe Illustrator.<br>
+
+                Adobe InDesign.<br>
+
+                Adobe Photoshop.</p>
+        </div>
+
+        <script>
+            var count = 1;
+
+            function openForm() {
+                count++;
+                if (count % 2 == 0) {
+                    document.getElementById("form").style.height = "200px";
+                } else {
+                    document.getElementById("form").style.height = 0;
+                }
+
+            }
+
+            function openForm2() {
+                count++;
+                if (count % 2 == 0) {
+                    document.getElementById("form2").style.height = "200px";
+                } else {
+                    document.getElementById("form2").style.height = 0;
+                }
+
+            }
+
+            function openForm3() {
+                count++;
+                if (count % 2 == 0) {
+                    document.getElementById("form3").style.height = "200px";
+                } else {
+                    document.getElementById("form3").style.height = 0;
+                }
+
+            }
+        </script>
+
+
+
+        <!-- Add icon library
+        <script>
+            // When the user clicks on <div>, open the popup
+            function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+            }
+        </script> -->
+
+        <footer id="footer">
+            <a href="" class="icon">
+                <img src="icons/message.svg" alt="chat icon">
+            </a>
+            <a href="profile.html" class="icon">
+                <img src="icons/PROFILE.svg" alt="profile icon">
+            </a>
+            <a href="" class="icon">
+                <img src="icons/NOTIFICATION.svg" alt="notification icon">
+            </a>
+        </footer>
+
+</body>
+
+
+</html>
