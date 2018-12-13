@@ -58,8 +58,13 @@
             </p>
         </div>
 
-        <button class="signin next-btns" onclick="openForm2()">Experience</button>
+        <button class="signin next-btns" onclick="openForm2()">Portfolio</button>
         <div class="btns" id="form2">
+            <p> MY PREVIOUS PROJECTS</p>
+        </div>
+
+        <button class="signin next-btns" onclick="openForm3()">Experience</button>
+        <div class="btns" id="form3">
             <p> Waitress
                 Caffe - “Pizza Hut”
                 2009-2011
@@ -73,8 +78,8 @@
                 2011-now</p>
         </div>
 
-        <button class="signin next-btns" onclick="openForm3()">Skills</button>
-        <div class="btns" id="form3">
+        <button class="signin next-btns" onclick="openForm4()">Skills</button>
+        <div class="btns" id="form4">
             <p>
                 Accurate. <br>
 
@@ -120,6 +125,16 @@
                     document.getElementById("form3").style.height = "200px";
                 } else {
                     document.getElementById("form3").style.height = 0;
+                }
+
+            }
+
+            function openForm4() {
+                count++;
+                if (count % 2 == 0) {
+                    document.getElementById("form4").style.height = "200px";
+                } else {
+                    document.getElementById("form4").style.height = 0;
                 }
 
             }
